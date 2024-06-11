@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el menú */
+        .menu {
+            background-color: #91964f;;
+        
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 1.9em;
+        }
+
+        .menu li a:hover {
+            background-color: #1e6982;
+        }
+
+        /* Estilos para el submenú */
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: hsl(186, 88%, 24%);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+
+        .menu li ul li {
+            display: block;
+        }
+        .encabezado-{
+            background-color:  #000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 0;
+            font-size: 1.9em;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="encabezado-"><center>
+        <h1>Bolsos</h1>
+        <p>Conoce estos increibles bolsos</p></center>
+    </div>         
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+                <ul>
+                    <li><a href="consultoria.html">Introduccion</a></li>
+                    <li><a href="fabricacion.html">¿Como se fabrican?</a></li>
+                    <li><a href="marcas.html">Las marcas mas importantes</a></li>
+                    <li><a href="precios.html">Mas vendidas y precios</a></li>
+                </ul>
+            </li>
+            <li><a href="dior.html">Dior</a></li>
+            <li><a href="prada.html">Prada</a></li>
+            <li><a href="gucci.html">Gucci</a></li>
+            <li><a href="chanel.html">Chanel</a></li>
+            <li><a href="louisvuitton.html">Louis Vuitton</a></li>
+            <li><a href="hermes.html">Hermes</a></li>
+        </ul>
+    </nav>
+    <center>
+    <video width="90%" height="100%" autoplay muted>
+        <source src="videoentradaorg.mp4" type="video/mp4"></video></center>
+</body>
+</html>
+
